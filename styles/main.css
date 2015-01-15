@@ -1,0 +1,100 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  background-color: #75915c;
+  font-family: 'Raleway', sans-serif; }
+
+.form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .form::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.form-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .form-column:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 501px) and (max-width: 840px) {
+    .form-column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .form-column:nth-child(2) {
+        margin-right: 0; }
+      .form-column:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .form-column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .form-column:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 501px) and (max-width: 840px) {
+  .third-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .third-column:last-child {
+      margin-right: 0; } }
+
+select,
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+  color: white; }
+
+select {
+  border: solid #518e40 2px;
+  padding-left: 1em;
+  width: 100%;
+  font-size: 16px; }
+
+option {
+  border: solid #518e40 2px;
+  background-color: transparent; }
+
+input,
+textarea {
+  transition: all 900ms;
+  border: solid #518e40 5px;
+  padding-left: 1em;
+  width: 100%;
+  font-size: 16px; }
+  input:focus,
+  textarea:focus {
+    border: 5px solid white; }
+
+label {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: .5em;
+  padding-left: 2em;
+  color: white;
+  font-size: 18px; }
+
+/*# sourceMappingURL=main.css.map */

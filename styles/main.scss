@@ -1,0 +1,83 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+
+$mobile: new-breakpoint(max-width 500px);
+$tablet: new-breakpoint(min-width 501px max-width 840px);
+
+
+body {
+  background-color: #75915c;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form {
+  @include outer-container;
+
+}
+
+.form-column {
+
+  @include span-columns(4);
+
+  @include media($tablet) {
+    @include omega(2);
+    @include span-columns(6);
+  }
+
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+
+}
+
+.third-column {
+  @include media($tablet) {
+    @include span-columns(12);
+  }
+}
+
+select,
+input,
+textarea {
+  @include appearance(none);
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+select {
+  border: solid #518e40 2px;
+  padding-left: 1em;
+  width: 100%;
+  font-size: 16px;
+}
+
+option {
+  border: solid #518e40 2px;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  transition: all 900ms;
+  border: solid #518e40 5px;
+  padding-left: 1em;
+  width: 100%;
+  font-size: 16px;
+
+
+
+  &:focus {
+    border: 5px solid white;
+  }
+}
+
+label {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: .5em;
+  padding-left: 2em;
+  color: white;
+  font-size: 18px;
+}
